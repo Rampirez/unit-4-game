@@ -14,3 +14,4 @@ function buttonNumSelect() {
     return compNum
 }
 
+$("#computer-number").text(compNumSelect());
