@@ -24,7 +24,7 @@ function buttonNumSelect() {
 //this checks to see if you have won, lost, or still need to keep playing
 function checkGameState() {
   if (userNum == compNum) {
-      //this is the win state
+    //this is the win state
     alert("You won!");
     userNum = 0;
     compNumSelect();
@@ -33,7 +33,7 @@ function checkGameState() {
     $("#user-number").text(userNum);
     $("#win-num").text(wins);
   } else if (userNum > compNum) {
-      //this is the lose state
+    //this is the lose state
     alert(
       "You lost! The computer's number was " +
         compNum +
@@ -47,13 +47,15 @@ function checkGameState() {
     $("#user-number").text(userNum);
     $("#loss-num").text(losses);
   } else {
-      //do nothing here so the game can go on!!
+    //do nothing here so the game can go on!!
   }
 }
 
+//these two functions kick off the game on page load-in
 buttonNumSelect();
 compNumSelect();
 
+//this listens for the specific buttons, and adds to the user number based on what they press
 $(document).ready(function() {
   $("#button1").click(function() {
     userNum = button1 + userNum;
