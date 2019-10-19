@@ -6,4 +6,6 @@ function compNumSelect() {
     return compNum
 }
 
-$("#computer-number").text(compNumSelect());
+//start game
+    //set random number
+    //check for clicks and add numbers to user number
